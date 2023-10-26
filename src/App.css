@@ -1,0 +1,97 @@
+:root {
+	--primary-color: #404eed;
+	
+}
+
+@font-face {
+	font-family: "ABC Ginto Nino";
+	src: url("public/fonts/ABC_Ginto_Plus_Variable/ABCGintoPlusVariable-Trial.woff") format("woff");
+}
+@font-face {
+	font-family: "ABC Ginto Nord";
+	src: url("public/fonts/ABC_Ginto_Nord_Variable/ABCGintoNordVariable-Trial.woff") format("woff");
+}
+body{
+	width: 100%;
+}
+.btn {
+	padding: .8rem 1rem;
+	font-size: larger;
+	border-radius: 2rem;
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+}
+
+.rounded-1{
+	border-radius: 0.25rem;
+}
+.bg-prime {
+	background-color: var(--primary-color);
+}
+
+
+.btn:hover {
+
+	box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+}
+
+.page-section-container {
+	height: 99vh;
+	overflow: hidden;
+}
+
+.header-title {
+	font-family: "ABC Ginto Nord", Helvetica, Arial, sans-serif;
+
+}
+
+footer * {
+	padding: 5px 0;
+}
+
+i img {
+	height: 3rem;
+}
+
+.navigation-links * {
+	padding: 0.5rem;
+}
+
+.navigation-links label {
+	color: var(--primary-color);
+}
+
+#social-links img {
+	filter: invert();
+	height: 2.5rem;
+}
+
+p {
+	margin: 24px 0 0 0;
+	font-size: clamp(16px, 2vw, 20px);
+	line-height: 1.625
+}
+
+a:hover {
+	text-decoration: underline;
+}
+input{
+	background-color: rgb(141, 141, 141);
+	height: 2rem;
+	border-radius: 2px;
+	border-color: black;
+	outline: none;
+	padding: 0 10px;
+}
+
+.login-container-page .login-container{
+	background:linear-gradient(to left bottom,#3d4046,#1e1e23);
+}
+.login-container input{
+	background-color: hsl( 225 calc( 1 *6.3%) 12.5% /1);
+}
+.d-none{
+	display: none;
+}
