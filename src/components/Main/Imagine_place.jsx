@@ -6,7 +6,7 @@ import download_icon from "/download_icon.png"
 
 export default function Imagine_place() {
   return (
-    <div className="page-section-container relative bg-[#404eed]">
+    <div id='imagine-a-place' className="page-section-container relative bg-[#404eed] h-2/3">
       <div className=" lg:mx-auto max-lg:ps-8 p-5 lg:w-4/5 sm:w-full lg:text-center flex flex-col h-full   relative z-50  ">
         <div className="lg:mx-auto md:w-3/4 flex flex-col justify-evenly h-1/2  text-white ">
           <h1 className="md:text-6xl sm:text-5xl header-title font-extrabold   mt-auto pb-10">IMAGINE A PLACE...</h1>

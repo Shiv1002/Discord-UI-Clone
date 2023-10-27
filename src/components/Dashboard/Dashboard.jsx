@@ -1,27 +1,23 @@
 import React from 'react'
-import { Outlet, Route } from 'react-router-dom'
+import { Outlet, Route, Link } from 'react-router-dom'
 import Server1 from './servers/Server1'
 export default function Dashboard() {
   return (
     <div id='dashboard'>
       <div className='main-sidebar'>
-        <div>dashboard</div>
-        <div>
-          server 1
+        <div> <Link to="/dashboard/friends"> dashboard</Link> </div>
+        <div id='servers'>
+          <Link to="servers-1">Servers</Link>
         </div>
-        <div>plus</div>
-        <div>compass</div>
-        <div>download</div>
+        <div><Link to="plus" >plus</Link></div>
+        <div><Link to="compass"> compass </Link></div>
+        <div><Link to="download">download</Link></div>
       </div>
-      <div className="dash-sidebar">dash-sidebar</div>
-      <div className="main-dash">
-        <div className="dash-nav">nav</div>
-        {/* page based on navigation */}
-        <Outlet/>
-      </div>
-
       
+      <Outlet />
+
+
     </div>
-    
+
   )
 }

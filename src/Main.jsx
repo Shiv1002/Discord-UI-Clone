@@ -1,6 +1,6 @@
 import React from 'react'
 import discordLogo from "/discord_main_logo.svg";
-
+import "./App.css"
 import Imagine_place from "./components/Main/Imagine_place";
 import Navbar from "./components/Main/Navbar";
 import Invite_only from "./components/Main/Invite_only";
