@@ -6,7 +6,7 @@ import plus_icon from '/plus_icon.svg'
 import download_icon from '/download_icon.png'
 export default function Dashboard() {
   return (
-    <div id='dashboard' className='flex h-screen'>
+    <div id='dashboard' className='flex h-screen w-screen bg-neutral-700'>
       <div className='main-sidebar flex flex-col  p-3 py-4 bg-black h-full'>
         <Link  to="/dashboard/friends/online" className=''>
         <img src={logo} alt="" className='p-5 rounded-2xl bg-[#404eed] '   />
@@ -20,9 +20,9 @@ export default function Dashboard() {
         <Link to="download">
           <img src={download_icon} alt="" className='dash-nav-circle rounded-full '  /></Link>
       </div>
-      <div>
-        <Outlet />
-      </div>
+      
+      <Outlet />
+      
     </div>
 
   )

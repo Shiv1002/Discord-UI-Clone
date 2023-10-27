@@ -114,3 +114,15 @@ width: 85%;
 	background-color: grey;
 	padding: 1.2rem;
 }
+.sidebar-header .sidebar-icon{
+height: 2rem;
+}
+.sidebar-header .sidebar-button{
+display: flex;
+margin: 0.6rem 0;
+align-items: center;
+}
+.sidebar-header .sidebar-button *{
+margin: 0.2rem;
+}
+

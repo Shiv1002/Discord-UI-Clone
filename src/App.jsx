@@ -16,6 +16,7 @@ import Blocked from "./components/Dashboard/addfriend/friend-navbar/Blocked";
 import AddFriend from "./components/Dashboard/addfriend/friend-navbar/AddFriend";
 import AllFriends from "./components/Dashboard/addfriend/friend-navbar/AllFriends";
 import Dash from "./components/Dashboard/Dash";
+
 function App() {
   return (
     <Router>
@@ -26,18 +27,17 @@ function App() {
         <Route path="dashboard" element={<Dashboard />} >
           <Route path="" element={<Dash />}>
             <Route path="friends"  >
-              <Route path="" element={<FriendsPage />} >
-
+              <Route path="" element={<FriendsPage  url="friends" />} >
                 {/* <Route path="" element={<Online/>}></Route> */}
-                <Route path="online" element={<Online />}></Route>
+                <Route path="online" element={<Online />} ></Route>
                 <Route path="allFriends" element={<AllFriends />}></Route>
                 <Route path="pending" element={<Pending />}></Route>
                 <Route path="blocked" element={<Blocked />}></Route>
                 <Route path="addFriends" element={<AddFriend />}></Route>
               </Route>
             </Route>
-            <Route path="stageDiscovery" element={<Stage />} />
-            <Route path="nitro" element={<Nitro />}></Route>
+            <Route path="stageDiscovery" element={<Stage url="stage discovery"/>} />
+            <Route path="nitro" element={<Nitro url="nitro" />}></Route>
           </Route>
           <Route path="servers-1">
             <Route index element={<Server1 />} />
