@@ -28,8 +28,7 @@ function App() {
             <Route path="friends"  >
               <Route path="" element={<FriendsPage />} >
 
-                <Route path="" element={<Friends />}></Route>
-                <Route path="friends" element={<Friends />}></Route>
+                {/* <Route path="" element={<Online/>}></Route> */}
                 <Route path="online" element={<Online />}></Route>
                 <Route path="allFriends" element={<AllFriends />}></Route>
                 <Route path="pending" element={<Pending />}></Route>

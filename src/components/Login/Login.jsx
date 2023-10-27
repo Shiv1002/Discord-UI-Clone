@@ -7,7 +7,7 @@ export default function Login() {
   const [goToDashboard, setGoToDashboard] = React.useState(false)
 
   if (goToDashboard) {
-    return <Navigate to="/dashboard/friends" />
+    return <Navigate to="/dashboard/friends/online" />
   }
   return (
     <div className='login-container-page w-screen h-screen  bg-white text-white flex relative'>

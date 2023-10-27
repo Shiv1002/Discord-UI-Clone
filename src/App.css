@@ -97,3 +97,20 @@ input{
 .d-none{
 	display: none;
 }
+
+
+.main-sidebar a{
+	margin: 0.7rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+.main-sidebar img{
+height: 5rem;
+width: 85%;
+}
+.main-sidebar  .dash-nav-circle{
+	border-radius: 50%;
+	background-color: grey;
+	padding: 1.2rem;
+}
